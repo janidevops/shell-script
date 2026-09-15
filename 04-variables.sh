@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1="Suresh"  #there is no space between variable name and value
-PERSON2="Ramesh"
+PERSON1=$1  #$1 ia here arugument passed to the script  
+PERSON2=$2
 
 echo "$PERSON1 : Hello $PERSON2 How are you?"
 echo "$PERSON2 : I am fine $PERSON1, How are you?"
