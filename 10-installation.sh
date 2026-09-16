@@ -10,7 +10,7 @@ else
     echo "you are super user"
 fi
 
-dnf install mysql-server -y
+dnf install mysql-serverghgh -y
 if [ $? -eq 0]
     then 
     echo "Mysql-serever is failed..."
