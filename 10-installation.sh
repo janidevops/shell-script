@@ -20,5 +20,14 @@ else
 fi
 
 dnf install git -y
+if [ $? -eq 0]
+    then 
+    echo "Git is failed..."
+    exit 1
+else
+    echo "Git is installed successfully..."
+fi
+
+
 
 echo "is script proceeding...?"
