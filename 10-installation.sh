@@ -10,7 +10,7 @@ else
     echo "you are super user"
 fi
 
-dnf install mysql-serverghgh -y
+dnf install mysql-server -y
 if [ $? -ne 0 ]
     then 
     echo "Mysql-serever is failed..."
@@ -19,7 +19,7 @@ else
     echo "Mysql-server is installed successfully..."
 fi
 
-dnf install git -y
+dnf install gitrock -y
 if [ $? -ne 0 ]
     then 
     echo "Git is failed..."
