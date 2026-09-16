@@ -19,7 +19,7 @@ else
     echo "Mysql-server is installed successfully..."
 fi
 
-dnf install gitrock -y
+dnf install git -y
 if [ $? -ne 0 ]
     then 
     echo "Git is failed..."
