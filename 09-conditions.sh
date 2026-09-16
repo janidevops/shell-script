@@ -8,3 +8,5 @@ then
 else
     echo "The number is not greater than 10"
 fi
+
+# -gt , -lt , -ge , -le , -eq , -ne are used for integer comparison in shell scripting.
