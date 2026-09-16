@@ -11,7 +11,7 @@ else
 fi
 
 dnf install mysql-serverghgh -y
-if [ $? -eq 0]
+if [ $? -ne 0 ]
     then 
     echo "Mysql-serever is failed..."
     exit 1
@@ -20,7 +20,7 @@ else
 fi
 
 dnf install git -y
-if [ $? -eq 0]
+if [ $? -ne 0 ]
     then 
     echo "Git is failed..."
     exit 1
