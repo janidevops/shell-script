@@ -11,4 +11,3 @@ echo "which user is executing the script: $USER"
 echo "The exit status of the last command executed: $?"
 echo "Hostname of the machine: $HOSTNAME"
 echo "Process id of the last background command: $!"
-sleep 60
