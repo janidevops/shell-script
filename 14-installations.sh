@@ -19,6 +19,16 @@ else
     echo -e "$G you are super user $N"
 fi
 
+VALIDATE () {
+    if ([ $1 -ne 0 ])
+        then
+            echo -e "$2 & $1 is...$R failed $N"
+            exit 1
+    else
+        echo -e "$2 & $1 is installed...$G successfully $N"
+    fi
+}
+
 for i in $@
     do 
         echo "Install package : $i"
@@ -29,6 +39,7 @@ for i in $@
             then 
                 echo -e "Package $i is already installed... $Y SKIPPING $N"
             else
-                echo -e "$i is Not installed... $B need to install $N"
+                dnf install $i -y &>>$LOG_FILE
+                VALIDATE $? "Installation of $i"
         fi
     done
