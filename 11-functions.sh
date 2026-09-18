@@ -4,7 +4,7 @@
 USER_ID=$(id -u)
 
 VALIDATE () {
-    if ([$1 -ne 0])
+    if ([ $1 -ne 0 ])
         then
             echo "$2 & $1 is failed..."
             exit 1
