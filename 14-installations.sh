@@ -5,10 +5,10 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d '.' -f1)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
-R="\E[31m" # Red
-G="\E[32m" # Green
-Y="\E[33m" # Yellow
-B="\E[34m" # Blue
+R="\e[31m" # Red
+G="\e[32m" # Green
+Y="\e[33m" # Yellow
+B="\e[34m" # Blue
 
 if ([ $USER_ID -ne 0 ])
  then
