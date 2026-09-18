@@ -22,10 +22,10 @@ else
     echo "you are super user"
 fi
 
-dnf install mysql-server -y
+dnf install mysql-serverzz -y
 VALIDATE $? "Installation of mysql-server"
 
-dnf install git -y
+dnf install gitzz -y
 VALIDATE $? "Installation of git"
 
 
