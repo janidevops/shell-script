@@ -4,7 +4,8 @@
 USER_ID=$(id -u)
 
 VALIDATE () {
-
+echo "Exit code is $1"
+echo "What are doing is $2"
 
 }
 
