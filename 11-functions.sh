@@ -24,7 +24,7 @@ fi
 dnf install mysql-server -y
 VALIDATE $? "Installation of mysql-server"
 
-dnf install giterr -y
+dnf install git -y
 VALIDATE $? "Installation of git"
 
 
