@@ -21,5 +21,5 @@ for i in $@
                 echo "Package $i is already installed... SKIPPING"
             else
                 echo "$i is Not installed... need to install"
-
+        fi
     done
