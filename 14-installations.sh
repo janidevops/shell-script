@@ -11,5 +11,15 @@ else
 fi
 
 for i in $@
-    do echo "Install package : $i"
-done
+    do 
+        echo "Install package : $i"
+        
+        dnf list install $i &>> $LOG_FILE #here we are using dnf list install to check if the package is available for installation and then installing it.
+        
+        if ([ $? -eq 0])
+            then 
+                echo "Package $i is already installed... SKIPPING"
+            else
+                echo "$i is Not installed... need to install"
+
+    done
