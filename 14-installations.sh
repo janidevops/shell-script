@@ -31,10 +31,8 @@ VALIDATE () {
 
 for i in $@
     do 
-        echo "Install package : $i"
-
-        dnf list installed $i &>>$LOG_FILE #here we are using dnf list installed to check if the package is already installed and then installing it.
-        
+        echo "package to install: $i"
+        dnf list installed $i &>>$LOGFILE
         if ([ $? -eq 0 ])
             then 
                 echo -e "Package $i is already installed... $Y SKIPPING $N"
