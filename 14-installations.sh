@@ -14,7 +14,7 @@ for i in $@
     do 
         echo "Install package : $i"
 
-        dnf list install $i &>> $LOG_FILE #here we are using dnf list install to check if the package is available for installation and then installing it.
+        dnf list install $i &>>$LOG_FILE #here we are using dnf list install to check if the package is available for installation and then installing it.
         
         if ([ $? -eq 0])
             then 
