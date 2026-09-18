@@ -26,8 +26,8 @@ for i in $@
         
         if ([ $? -eq 0 ])
             then 
-                echo "Package $i is already installed...$Y SKIPPING $Y"
+                echo "Package $i is already installed... $Y SKIPPING $Y"
             else
-                echo "$i is Not installed...$B need to install $B"
+                echo "$i is Not installed... $B need to install $B"
         fi
     done
