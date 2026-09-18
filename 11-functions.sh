@@ -21,7 +21,7 @@ else
     echo "you are super user"
 fi
 
-dnf install mysql-serverzerr -y
+dnf install mysql-server -y
 VALIDATE $? "Installation of mysql-server"
 
 dnf install giterr -y
