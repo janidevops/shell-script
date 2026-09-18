@@ -4,8 +4,13 @@
 USER_ID=$(id -u)
 
 VALIDATE () {
-echo "Exit code is $1"
-echo "What are doing is $2"
+if ([$1 -ne 0])
+    then
+        echo "$2 is failed..."
+        exit 1
+else
+    echo "$2 is installed successfully..."
+fi
 
 }
 
